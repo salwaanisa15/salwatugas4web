@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Formulir Pendaftaran Ekskul</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <style>
+body {
+background-color: powderblue;
+}
+h1 {
+color: blue;
+}
+p {
+color: black;
+}
+</style> 
+   <h3>Formulir Pendaftaran Ekstrakurikuler SMKN 1 CISARUA</h3> 
+   <img src="download (5).jpeg" alt="Contoh Gambar" class="circle-img"> 
+   <form action="#" method="post" enctype="multipart/form-data"> 
+    <fieldset> <legend><b>BIODATA</b></legend> <label for="nama">Nama Lengkap:</label> 
+     <p><input type="text" id="nama" name="nama" required> <label for="tempatLahir">Tempat Lahir:</label> </p> 
+     <p><input type="text" id="tempatLahir" name="tempatLahir" required> <label for="tanggalLahir">Tanggal Lahir:</label></p> 
+     <input type="date" id="tanggalLahir" name="tanggalLahir" required> 
+     <p><label for="usia">Usia:</label></p> 
+     <input type="number" id="usia" name="usia" min="13" max="25" required> 
+     <p><label>Jenis Kelamin:</label></p> 
+     <input type="radio" id="pria" name="jenisKelamin" value="Pria" required> <label for="pria">Pria</label> 
+     <input type="radio" id="wanita" name="jenisKelamin" value="Wanita" required> <label for="wanita">Wanita</label> 
+     <p><label for="agama">Agama:</label></p> <select id="agama" name="agama" required> <option value="islam">Islam</option> <option value="kristen_protestan">Kristen Protestan</option> <option value="kristen_katolik">Kristen Katolik</option> <option value="budha">Budha</option> <option value="hindu">Hindu</option> <option value="konghuchu">Konghuchu</option> <option value="penganut_kepercayaan">Penganut Kepercayaan</option> </select> 
+    </fieldset> 
+    <fieldset> <legend><b>ALAMAT</b></legend> <label for="alamat">Alamat Lengkap:</label> 
+     <p><input type="text" id="alamat" name="alamat" required> <label for="rt">RT:</label></p> 
+     <p><input type="text" id="rt" name="rt" required> <label for="rw">RW:</label></p> 
+     <p><input type="text" id="rw" name="rw" required> <label for="desa">Desa/Kelurahan:</label></p> 
+     <p></p> <select id="desa" name="desa" required> <option value="cipada">Cipada</option> <option value="jambudipa">Jambudipa</option> <option value="padaasih">Padaasih</option> <option value="pasir_halang">Pasir Halang</option> <option value="pasir_langu">Pasir Langu</option> <option value="tugumukti">Tugumukti</option> <option value="sadang_mekar">Sadang Mekar</option> </select> 
+     <p><label for="kecamatan">Kecamatan:</label></p><select id="kecamatan" name="kecamatan" required> <option value="cisarua">Cisarua</option> <option value="parongpong">Parongpong</option> <option value="lembang">Lembang</option> <option value="ngamprah">Ngamprah</option> <option value="padalarang">Padalarang</option> <option value="cipatat">Cipatat</option> <option value="cikalong_wetan">Cikalong Wetan</option> <option value="batujajar">Batujajar</option> </select> 
+     <p><label for="kabupaten">Kabupaten/Kota:</label></p><select id="kabupaten" name="kabupaten" required> <option value="kbb">KBB</option> <option value="bandung">Bandung</option> <option value="cianjur">Cianjur</option> <option value="sumedang">Sumedang</option> <option value="kota_bandung">Kota Bandung</option> <option value="kota_cimahi">Kota Cimahi</option> </select> 
+     <p><label for="provinsi">Provinsi:</label></p> <select id="provinsi" name="provinsi" required> <option value="jabar">Jawa Barat</option> <option value="jateng">Jawa Tengah</option> <option value="jatim">Jawa Timur</option> <option value="dki_jakarta">DKI Jakarta</option> </select> 
+     <p><label for="kodepos">Kode Pos:</label></p> 
+     <p><input type="text" id="kodepos" name="kodepos" required> </p> 
+    </fieldset> 
+    <fieldset> <legend><b>KONTAK</b></legend> <label for="telepon">No Telepon:</label> 
+     <input type="tel" id="telepon" name="telepon" required> <label for="email">Email:</label> 
+     <input type="email" id="email" name="email" required> 
+    </fieldset> 
+    <fieldset> <legend><b>AKUN</b></legend> <label for="username">Username:</label> 
+     <input type="text" id="username" name="username" required> <label for="password">Password:</label> 
+     <input type="password" id="password" name="password" required> <label for="konfirmasi_password">Konfirmasi Password:</label> 
+     <input type="password" id="konfirmasi_password" name="konfirmasi_password" required> 
+    </fieldset> 
+    <fieldset> <legend><b>EKSTRAKURIKULER</b></legend> <label for="ekskul">Pilih Ekskul:</label> 
+     <div id="ekskul"> 
+      <input type="checkbox" name="PMR" value="PMR">PMR 
+      <br> 
+      <input type="checkbox" name="PRAMUKA" value="PRAMUKA">PRAMUKA 
+      <br> 
+      <input type="checkbox" name="PASKIBRA" value="PASKIBRA">PASKIBRA 
+      <br> 
+      <input type="checkbox" name="OSIS" value="OSIS">OSIS 
+      <br> 
+      <input type="checkbox" name="SISPAKALA" value="SISPAKALA">SISPAKALA 
+      <br> 
+      <input type="checkbox" name="SENI TARI" value="SENI TARI">SENI TARI 
+      <br> 
+      <input type="checkbox" name="SENI MUSIK" value="SENI MUSIK">SENI MUSIK 
+      <br> 
+      <input type="checkbox" name="CODAX (RPL)" value="CODAX (RPL)">CODAX (RPL) 
+      <br> 
+      <input type="checkbox" name="F&amp;B (PERHOTELAN)" value="F&amp;B (PERHOTELAN)">F&amp;B (PERHOTELAN)) 
+      <br> 
+      <input type="checkbox" name="HK (PERHOTELAN)" value="HK (PERHOTELAN)">HK (PERHOTELAN) 
+      <br> 
+      <input type="checkbox" name="VOLLY" value="VOLLY">VOLLY 
+      <br> 
+      <input type="checkbox" name="BASKET" value="BASKET">BASKET 
+      <br> 
+      <input type="checkbox" name="FUTSAL" value="FUTSAL">FUTSAL 
+      <br> 
+      <input type="checkbox" name="IRMA" value="IRMA">IRMA 
+      <br> 
+      <input type="checkbox" name="SASTRA" value="SASTRA">SASTRA 
+      <br> 
+     </div> 
+    </fieldset> 
+    <fieldset> <legend><b>UPLOAD PERSYARATAN</b></legend> <label for="pas_foto">Upload Pas Foto 3x4:</label> 
+     <input type="file" id="pas_foto" name="pas_foto" accept="image/*" required> <label for="kartu_pelajar">Upload Kartu Tanda Pelajar:</label> 
+     <input type="file" id="kartu_pelajar" name="kartu_pelajar" accept="image/*" required> 
+    </fieldset> 
+    <p><button type="submit">Submit</button> <button type="reset">Reset</button> </p> 
+   </form> 
+   <footer> 
+    <h6>©2024Hak Cipta Salwa Nur Anisa XI RPL 1</h6> 
+   </footer> 
+  </div> 
+ </body>
+</html>
